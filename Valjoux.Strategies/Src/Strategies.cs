@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using Analys;
+using Valjoux.Utils;
 using Veho.Matrix.Columns;
 
 namespace Valjoux {
@@ -18,6 +19,7 @@ namespace Valjoux {
         catch (Exception) { table[0, m.Key] = double.NaN; }
       return table;
     }
+
     public static (Crostab<double> elapsed, Crostab<TO> result) Run<T, TO>(
       int iteration,
       Dictionary<string, Func<T, TO>> methods,
@@ -34,8 +36,4 @@ namespace Valjoux {
       return (elapsed, result);
     }
   }
-
-
-
-
 }

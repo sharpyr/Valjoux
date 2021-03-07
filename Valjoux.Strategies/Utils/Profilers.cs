@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Threading;
 
-namespace Valjoux {
+namespace Valjoux.Utils {
   public static class Profilers {
     public static double Profile(
       this Stopwatch eta,

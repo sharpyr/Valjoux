@@ -4,7 +4,7 @@ using System.Linq;
 using Analys;
 using Veho.Vector;
 
-namespace Valjoux {
+namespace Valjoux.Utils {
   public static class DataFactory {
     public static Table<double> Init(Dictionary<string, Action> methods) => Table<double>.Build(
       methods.Keys.ToArray(),
