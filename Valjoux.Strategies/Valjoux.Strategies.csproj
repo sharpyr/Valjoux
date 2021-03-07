@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
         <TargetFramework>netstandard2.0</TargetFramework>
         <PackageVersion>0.0.0</PackageVersion>
-        <Title>Valjoux.Crostab</Title>
+        <Title>Valjoux.Strategies</Title>
         <Description>Performance test tool</Description>
         <PackageTags>Performance test</PackageTags>
         <Authors>Hoyeung Wong</Authors>
@@ -15,4 +15,8 @@
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <RootNamespace>Valjoux</RootNamespace>
     </PropertyGroup>
+    <ItemGroup>
+      <PackageReference Include="Analys.Crostab" Version="0.0.12" />
+      <PackageReference Include="Veho.Vector" Version="0.1.17" />
+    </ItemGroup>
 </Project>

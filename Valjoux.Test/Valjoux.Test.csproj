@@ -1,12 +1,21 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
     <PropertyGroup>
         <TargetFramework>net472</TargetFramework>
-
+        <PackageVersion>0.0.0</PackageVersion>
+        <Title>Valjoux.Test</Title>
+        <Description>Test for Valjoux</Description>
+        <PackageTags>Valjoux, Test</PackageTags>
+        <Authors>Hoyeung Wong</Authors>
+        <Company>Hoyeung Wong</Company>
+        <Copyright>Copyright (c) Hoyeung Wong 2020-present</Copyright>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <AssemblyVersion>0.0.0</AssemblyVersion>
+        <FileVersion>0.0.0</FileVersion>
+        <RootNamespace>Valjoux.Test</RootNamespace>
         <IsPackable>false</IsPackable>
     </PropertyGroup>
-
     <ItemGroup>
+        <PackageReference Include="Analys.Deco" Version="0.0.12" />
         <PackageReference Include="NUnit" Version="3.12.0" />
         <PackageReference Include="NUnit3TestAdapter" Version="3.16.1" />
         <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.5.0" />
@@ -14,9 +23,7 @@
         <PackageReference Include="Typen" Version="0.0.8" />
         <PackageReference Include="Veho" Version="0.1.17" />
     </ItemGroup>
-
     <ItemGroup>
-      <ProjectReference Include="..\Valjoux.Strategies\Valjoux.Strategies.csproj" />
+        <ProjectReference Include="..\Valjoux.Strategies\Valjoux.Strategies.csproj" />
     </ItemGroup>
-
 </Project>
