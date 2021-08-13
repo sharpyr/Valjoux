@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using Analys;
+using Veho;
 using Veho.Vector;
 
 namespace Valjoux.Utils {

@@ -1,10 +1,10 @@
 using System;
 using Analys;
 using NUnit.Framework;
-using Palett.Presets;
 using Spare.Logger;
-using Veho.Dictionary;
+using Veho;
 using Veho.Types;
+using Palett;
 
 namespace Valjoux.Test {
   [TestFixture]
@@ -30,7 +30,7 @@ namespace Valjoux.Test {
         )
       );
       "\nElapsed".Logger();
-      elapsed.Deco(orient: Operated.Rowwise, presets: (PresetCollection.Subtle, PresetCollection.Fresh)).Logger();
+      elapsed.Deco(orient: Operated.Rowwise, presets: (Presets.Subtle, Presets.Fresh)).Logger();
       "\nResult".Logger();
       result.Deco().Logger();
     }

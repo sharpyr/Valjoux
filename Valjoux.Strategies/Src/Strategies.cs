@@ -4,7 +4,7 @@ using System.Diagnostics;
 using System.Linq;
 using Analys;
 using Valjoux.Utils;
-using Veho.Matrix.Columns;
+using Veho.Columns;
 
 namespace Valjoux {
   public static class Strategies {
