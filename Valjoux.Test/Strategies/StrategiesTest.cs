@@ -1,25 +1,25 @@
 using System;
 using Analys;
 using NUnit.Framework;
-using Spare.Logger;
+using Palett;
+using Spare;
 using Veho;
 using Veho.Types;
-using Palett;
 
-namespace Valjoux.Test {
+namespace Valjoux.Test.Strategies {
   [TestFixture]
   public class ElPrimeroTest {
     [Test]
     public void TestFunc() {
-      var (elapsed, result) = Strategies.Run(
+      var (elapsed, result) = Valjoux.Strategies.Run(
         (int) 1E+6,
-        Dict.From<string, Func<object, double>>(
+        Li.From<(string, Func<object, double>)>(
           ("Generic", Methods.GenericCastDouble),
           ("Generic1", Methods.GenericCastDouble1),
           ("Generic2", Methods.GenericCastDouble2),
           ("Generic3", Methods.GenericCastDouble3)
         ),
-        Dict.From<string, object>(
+        Li.From<(string, object)>(
           ("alpha", "5"),
           ("beta", "-"),
           ("gamma", ""),

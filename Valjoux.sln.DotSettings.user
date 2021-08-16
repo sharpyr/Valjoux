@@ -2,5 +2,7 @@
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=b41f7d36_002Ddc24_002D439e_002D9f30_002D884d5f402fb5/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="ElPrimeroTest" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;NUnit3x::6EA8AB5D-3A0A-40A3-8AFB-B523B118568A::.NETFramework,Version=v4.7.2::Valjoux.Test.ElPrimeroTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::6EA8AB5D-3A0A-40A3-8AFB-B523B118568A::.NETFramework,Version=v4.7.2::Valjoux.Test.Timeout.TimeoutTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::6EA8AB5D-3A0A-40A3-8AFB-B523B118568A::.NETFramework,Version=v4.7.2::Valjoux.Test.Strategies.ElPrimeroTest&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
