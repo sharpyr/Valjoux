@@ -31,11 +31,11 @@ namespace Valjoux.Utils {
     public static (double elapsed, TO result) Profile<T, TO>(
       this Stopwatch eta,
       int iterations,
-      KeyValuePair<string, Func<T, TO>> method,
-      KeyValuePair<string, T> parameter
+      (string name, Func<T, TO> func) method,
+      (string key, T value) parameter
     ) {
-      var v = parameter.Value;
-      var f = method.Value;
+      var v = parameter.value;
+      var f = method.func;
       //Run at highest priority to minimize fluctuations caused by other processes/threads
       Process.GetCurrentProcess().PriorityClass = ProcessPriorityClass.High;
       Thread.CurrentThread.Priority = ThreadPriority.Highest;
@@ -49,7 +49,7 @@ namespace Valjoux.Utils {
       for (var i = 0; i < iterations; i++) f(v);
       eta.Stop();
       var elapsed = eta.Elapsed.TotalMilliseconds;
-      Console.WriteLine($"Elapsed {elapsed} ms: {method.Key}({parameter.Key})");
+      Console.WriteLine($"Elapsed {elapsed} ms: {method.name}({parameter.key})");
       return (elapsed, result);
     }
   }
