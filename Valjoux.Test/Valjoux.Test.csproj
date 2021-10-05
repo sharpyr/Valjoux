@@ -15,13 +15,13 @@
         <IsPackable>false</IsPackable>
     </PropertyGroup>
     <ItemGroup>
-        <PackageReference Include="Analys.Deco" Version="0.1.24" />
+        <PackageReference Include="Analys.Deco" Version="0.2.0" />
         <PackageReference Include="NUnit" Version="3.13.2" />
         <PackageReference Include="NUnit3TestAdapter" Version="4.0.0" />
         <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.11.0" />
-        <PackageReference Include="Spare" Version="0.1.27" />
+        <PackageReference Include="Spare" Version="0.2.1" />
         <PackageReference Include="Typen" Version="0.1.1" />
-        <PackageReference Include="Veho" Version="0.4.18" />
+        <PackageReference Include="Veho" Version="0.5.7" />
     </ItemGroup>
     <ItemGroup>
         <ProjectReference Include="..\Valjoux.Strategies\Valjoux.Strategies.csproj" />

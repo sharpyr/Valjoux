@@ -13,13 +13,13 @@ namespace Valjoux.Test.Strategies {
     public void TestFunc() {
       var (elapsed, result) = Valjoux.Strategies.Run(
         (int) 1E+6,
-        Li.From<(string, Func<object, double>)>(
+        Seq.From<(string, Func<object, double>)>(
           ("Generic", Methods.GenericCastDouble),
           ("Generic1", Methods.GenericCastDouble1),
           ("Generic2", Methods.GenericCastDouble2),
           ("Generic3", Methods.GenericCastDouble3)
         ),
-        Li.From<(string, object)>(
+        Seq.From<(string, object)>(
           ("alpha", "5"),
           ("beta", "-"),
           ("gamma", ""),
