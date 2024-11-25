@@ -19,9 +19,9 @@
         <PackageReference Include="NUnit" Version="4.2.2" />
         <PackageReference Include="NUnit3TestAdapter" Version="4.6.0" />
         <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.12.0" />
-        <PackageReference Include="Spare" Version="0.2.7" />
+        <PackageReference Include="Spare" Version="0.2.8" />
         <PackageReference Include="Typen" Version="0.1.1" />
-        <PackageReference Include="Veho" Version="0.6.3" />
+        <PackageReference Include="Veho" Version="0.6.4" />
     </ItemGroup>
     <ItemGroup>
         <ProjectReference Include="..\Valjoux.Strategies\Valjoux.Strategies.csproj" />
